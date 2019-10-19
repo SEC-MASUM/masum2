@@ -1,0 +1,34 @@
+<h2>User Data</h2>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+         <th>Id</th>
+         <th>Name</th>
+         <th>Gender</th>
+         <th>Email</th>
+         <th>Location</th>  
+          </tr>   
+           </thead>
+           <tbody>
+             <tr *ngFor="let person of user.results">
+               <td>{{person.id.value}}</td>
+               <td>{{person.name.first}}</td>
+               <td>{{person.gender}}</td>
+               <td>{{person.email}}</td>
+               <td>{{person.location.country}}</td>
+     
+             </tr>
+           </tbody>
+     
+        
+         
+        </table>
+</div>
+  
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
